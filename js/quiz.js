@@ -19,7 +19,7 @@ homeBtn.addEventListener("click", (e) => {
 })
 // timer functionality
 let timerElement = document.getElementById("timer");
-let quizPeriod = parseFloat(sessionStorage.getItem("quizPeriod")) || 90
+let quizPeriod = parseFloat(sessionStorage.getItem("quizPeriod")) || (35*60)
 function formatTime(seconds) {
     let minutes = Math.floor(seconds / 60);
     let remainingSeconds = seconds % 60;
