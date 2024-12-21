@@ -1,0 +1,36 @@
+/* General style */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50E3C2;
+    --accent-color: #F8E71C;
+    --background-color: #F5F7FA;
+    --text-color: #4A4A4A;
+    --font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family)
+}
+
+
+.main-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background-color: var(--secondary-color);
+
+}
+
+/* index */
+.wrapper {
+    height: 100vh;
+}

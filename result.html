@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/result.css" />
+</head>
+
+<body>
+    <!-- Welcome and Home Button Section -->
+    <div class="container mt-4">
+        <div class="d-flex flex-column justify-content-center  align-items-center">
+            <div>
+                <a id="homeBtn" href="#" class="btn btn-outline-danger btn-lg mb-2">
+                    <i class="bi bi-arrow-left-circle"></i> Home
+                </a>
+            </div>
+
+            <div class="text-center w-100">
+                <div class="alert alert-info">
+                    <h2>hi, <span id="challengerName" class="text-primary"></span>! 🎉</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Result Summary Section -->
+    <div class="container mt-4 mb-4">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Your Results</h3>
+            </div>
+            <div class="card-body" id="resultSummary"></div>
+        </div>
+    </div>
+
+    <!-- Detailed Answers Section -->
+    <div class="container mt-4 mb-5">
+        <h4 class="mb-3 text-center">Detailed Answers</h4>
+        <div id="detailedAnswers" class="accordion" role="tablist"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script type="module" src="js/result.js"></script>
+</body>
+
+</html>

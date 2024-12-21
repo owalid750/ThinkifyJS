@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+
+<body>
+    <div class="container mt-4 mb-4">
+        <div class="row align-items-center bg-light shadow-sm rounded p-3">
+            <!-- Back Button -->
+            <div class="col-md-2 text-start">
+                <a id="homeBtn" href="#" class="btn btn-outline-danger btn-lg">
+                    <i class="bi bi-arrow-left-circle"></i> Home
+                </a>
+            </div>
+
+            <!-- Welcome Message -->
+            <div class="col-md-10 text-center">
+                <h2 class="display-5 fw-bold text-primary">
+                    Welcome, <span id="w-challengerName" class="text-success"></span>! 
+                </h2>
+                <p class="lead text-secondary">Think Twice , Choose Once </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Question Card will be loaded here dynamically -->
+                <div id="questionCardContainer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Library -->
+    <script src="js/all.min.js"></script>
+    <script type="module" src="js/quiz.js"></script>
+</body>
+
+</html>

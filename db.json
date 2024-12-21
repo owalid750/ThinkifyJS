@@ -1,0 +1,139 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Explain the concept of closures in JavaScript.",
+            "image": "./imgs/closures1.png",
+            "answers": [
+                "A closure is a global function with no scope.",
+                "A closure is a function that remembers its outer variables even after the outer function has finished executing.",
+                "A closure is a function that only runs once.",
+                "A closure is a way to declare variables."
+            ],
+            "correct_answer": 1,
+            "hint": "Think about functions within functions.",
+            "explanation": "Closures allow inner functions to access the variables of outer functions even after the outer function has completed execution.",
+            "difficulty": "Hard"
+        },
+        {
+            "id": 2,
+            "question": "What is the purpose of the `this` keyword in JavaScript?",
+            "image": "./imgs/this1.png",
+            "answers": [
+                "It refers to the current object context.",
+                "It refers to the global window object.",
+                "It declares a variable.",
+                "It defines a new function."
+            ],
+            "correct_answer": 0,
+            "hint": "Think about object-oriented programming.",
+            "explanation": "The `this` keyword refers to the object on which the current function is being called, depending on the context.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 3,
+            "question": "What is event delegation in JavaScript?",
+            "image": "./imgs/eventdelg1.png",
+            "answers": [
+                "A way to declare events globally.",
+                "A method to prevent events from bubbling.",
+                "A technique to remove all event listeners.",
+                "A method to handle events at a parent level and avoid adding event listeners to individual child elements."
+            ],
+            "correct_answer": 3,
+            "hint": "It helps reduce multiple event listeners.",
+            "explanation": "Event delegation allows you to attach a single event listener to a parent element that will handle events for multiple child elements.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 4,
+            "question": "What is the difference between `==` and `===` in JavaScript?",
+            "image": "./imgs/equals1.png",
+            "answers": [
+                "`==` checks for value equality, `===` checks for both value and type equality.",
+                "Both are the same.",
+                "`==` checks for type equality, `===` checks for value equality.",
+                "`===` is used for assignment."
+            ],
+            "correct_answer": 0,
+            "hint": "One is strict and one is loose.",
+            "explanation": "`==` performs type coercion, while `===` does not and strictly checks both type and value.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 5,
+            "question": "Explain the concept of hoisting in JavaScript.",
+            "image": "./imgs/hoisting1.png",
+            "answers": [
+                "Hoisting moves variables to the global scope.",
+                "Hoisting prevents variables from being declared.",
+                "Hoisting moves declarations to the top of their scope before execution.",
+                "Hoisting delays variable declarations until needed."
+            ],
+            "correct_answer": 2,
+            "hint": "Think about how functions and variables are processed.",
+            "explanation": "Hoisting allows function and variable declarations to be moved to the top of their containing scope during the compilation phase.",
+            "difficulty": "Hard"
+        },
+        {
+            "id": 6,
+            "question": "What is the difference between `let`, `const`, and `var`?",
+            "image": "./imgs/let-varconst1.png",
+            "answers": [
+                "All have the same scope.",
+                "`let` and `const` have block scope, while `var` has function scope.",
+                "`const` can be reassigned.",
+                "`var` is block-scoped."
+            ],
+            "correct_answer": 1,
+            "hint": "Think about scope and reassignment.",
+            "explanation": "`var` has function scope, while `let` and `const` have block scope. `const` cannot be reassigned.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 7,
+            "question": "What is the purpose of `Promise` in JavaScript?",
+            "image": "./imgs/promise1.png",
+            "answers": [
+                "To handle asynchronous operations.",
+                "To create loops.",
+                "To handle synchronous operations.",
+                "To define new functions."
+            ],
+            "correct_answer": 0,
+            "hint": "Think about asynchronous code.",
+            "explanation": "Promises are used to manage asynchronous operations and handle success or failure outcomes.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 8,
+            "question": "What is the `map` function used for?",
+            "image": "./imgs/map1.png",
+            "answers": [
+                "To filter elements in an array.",
+                "To reduce an array to a single value.",
+                "To find an element in an array.",
+                "To create a new array by transforming each element."
+            ],
+            "correct_answer": 3,
+            "hint": "It transforms array elements.",
+            "explanation": "The `map` function applies a callback to each element in the array and returns a new array.",
+            "difficulty": "Medium"
+        },
+        {
+            "id": 9,
+            "question": "What is the difference between `null` and `undefined` in JavaScript?",
+            "image": "./imgs/null-undefiend1.png",
+            "answers": [
+                "Both represent an absence of value.",
+                "`undefined` is used for objects, `null` for variables.",
+                "`null` is a default value for variables.",
+                "`null` is an intentional absence of a value, `undefined` means a variable has been declared but not assigned a value."
+            ],
+            "correct_answer": 3,
+            "hint": "Think about uninitialized variables.",
+            "explanation": "`undefined` is the default value for uninitialized variables, while `null` is explicitly assigned to indicate no value.",
+            "difficulty": "Medium"
+        }
+    ]
+}
