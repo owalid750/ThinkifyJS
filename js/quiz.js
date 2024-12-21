@@ -2,15 +2,44 @@
 if (!sessionStorage.getItem("ChallengerName")) {
     window.location.href = "index.html";
 }
+
+// set chanlleger name after welcome msg
 document.getElementById("w-challengerName").textContent = sessionStorage.getItem("ChallengerName");
+
+// home btn functionality
 let homeBtn = document.getElementById("homeBtn");
 homeBtn.addEventListener("click", (e) => {
     let reset = confirm("This will reset all answers.")
     if (reset) {
+        // Stop the timer to prevent overwriting session storage
+        clearInterval(timerInterval);
         sessionStorage.clear();
         window.location.href = "index.html";
     }
 })
+// timer functionality
+let timerElement = document.getElementById("timer");
+let quizPeriod = parseFloat(sessionStorage.getItem("quizPeriod")) || 90
+function formatTime(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+}
+
+let timerInterval = setInterval(() => {
+    if (quizPeriod > 0) {
+        quizPeriod -= 1;
+        timerElement.textContent = formatTime(quizPeriod);
+        sessionStorage.setItem("quizPeriod", quizPeriod);
+    } else {
+        clearInterval(timerInterval);
+        timerElement.textContent = "Time's up!";
+        window.location.href = "result.html";
+    }
+}, 1000);
+
+timerElement.textContent = formatTime(quizPeriod);
+
 
 async function getQuestions() {
     try {

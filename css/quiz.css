@@ -1,43 +1,127 @@
-  .card-title {
+  /* timer */
+  .timer {
+      font-size: 2.5rem;
       font-weight: bold;
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .question-card {
-      border: 1px solid #ddd;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* Card Styling */
+  .card.question-card {
+      border: 1px solid #dee2e6;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
   }
 
+  .card.question-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Header Styling */
   .card-header {
-      background-color: #f8f9fa;
-      font-size: 1.2rem;
+      background-color: var(--primary-color);
+      /* Blue header */
+      color: white;
       font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 15px;
   }
 
-  .card-body {
-      padding: 2rem;
+  /* Image Placeholder */
+  .image-placeholder {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
   }
 
-  .badge {
-      font-size: 1rem;
+  /* Question Text */
+  .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #343a40;
+      margin-bottom: 20px;
+  }
+
+  /* Hint Styling */
+  .hint-text {
+      font-size: 0.9rem;
+      color: #6c757d;
+      font-style: italic;
+      margin-bottom: 20px;
+  }
+
+  /* Answer Choices */
+  .form-check-input {
+      margin-right: 10px;
   }
 
   .answer-label {
       font-size: 1rem;
+      color: #495057;
   }
 
-  .hint-text {
-      font-style: italic;
-      color: #6c757d;
+  /* Badge Styling */
+  .badge {
+      font-size: 0.9rem;
+      padding: 5px 10px;
+      margin-top: 10px;
   }
 
+  /* Navigation Buttons */
   .navigation-btns {
-      display: flex;
-      justify-content: space-between;
+      text-align: right;
   }
 
-  .image-placeholder {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      background-color: #e0e0e0;
+  .navigation-btns .btn {
+      margin-left: 10px;
+  }
+
+  .btn.main-btn {
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: bold;
+      border: none;
+  }
+
+  .btn.main-btn:hover {
+      background-color: var(--secondary-color);
+  }
+
+  .btn-secondary {
+      color: #6c757d;
+      background-color: #e2e6ea;
+      border: none;
+  }
+
+  .btn-success {
+      font-weight: bold;
+  }
+
+  .btn-success:disabled {
+      background-color: #b7d4b9;
+      border: none;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+      .card.question-card {
+          font-size: 0.9rem;
+      }
+
+      .card-title {
+          font-size: 1.2rem;
+      }
+
+      .hint-text {
+          font-size: 0.8rem;
+      }
   }
